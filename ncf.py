@@ -321,16 +321,13 @@ neumf_layer = Dense(units=1, activation='sigmoid')(concat)
 neumf = keras.Model(inputs=[inputs_u, inputs_i], outputs=neumf_layer, name='NeuMF')
 
 # Compiling NeuMF
-
 neumf.compile(optimizer='SGD', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Fitting
-
 neumf.fit([train_xu, train_xi], y_train, batch_size=batch_size, epochs=nr_epochs, 
         callbacks=[get_tensorboard('NeuMF')], verbose=0)
 
 # Testing
-
 test_xu = test_x_u.to_numpy()
 test_xi = test_x_i.to_numpy()
 y_test = test_y.to_numpy()
