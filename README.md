@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neural Collaborative Filtering (NCF)</title>
 </head>
 <body>
 
@@ -13,7 +12,8 @@
 
 <h2>Description</h2>
 
-<p>Neural Collaborative Filtering (NCF) leverages neural networks to model the interaction between users and items for recommendation systems. This implementation uses the MovieLens dataset to create a Neural Matrix Factorization (NeuMF) model, focusing on implicit interactions.</p>
+<p>Neural Collaborative Filtering (NCF) leverages neural networks to model implicit interactions between users and items for recommendation systems. This implementation uses the MovieLens dataset to create a Neural Matrix Factorization (NeuMF) model, focusing on implicit interactions.</p>
+<p>The implementation is based on the paper <a href="https://arxiv.org/abs/1708.05031" target="_blank">Neural Collaborative Filtering</a> by Xiangnan He et al.</p>
 
 <h2>Features</h2>
 <ul>
@@ -58,6 +58,10 @@ cd ncf
 <h2>Contributing</h2>
 
 <p>Feel free to open issues or submit pull requests for improvements or bug fixes.</p>
+
+<h2>License</h2>
+
+<p>This project is licensed under the MIT License.</p>
 
 </body>
 </html>
